@@ -56,7 +56,7 @@ create table follow(
 	id_follow bigint primary key,
 	id_usuario nchar (30),
 	follow bit,
-	unfollow bit
+	unfollow bit,
 	foreign key (id_usuario) references usuario(id_usuario)
 );
 create table following_follow(
