@@ -47,15 +47,17 @@ create table conta_beta(
 create table curtida(
 	id_curtida int primary key,
 	data_curtida date,
-	id_usuario nchar (30)
+	id_usuario nchar (30),
 	foreign key (id_usuario) references usuario(id_usuario)
 
 );
 
 create table follow(
 	id_follow bigint primary key,
+	id_usuario nchar (30),
 	follow bit,
 	unfollow bit
+	foreign key (id_usuario) references usuario(id_usuario)
 );
 create table following_follow(
 	id_following bigint primary key,
