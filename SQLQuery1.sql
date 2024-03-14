@@ -167,3 +167,11 @@ insert into estoque (
 values
 (1, 1, 100),
 (2, 2, 150);
+
+select * from cliente;
+select * from pessoa_fisica;
+select * from pessoa_juridica;
+select * from editora;
+select * from livro;
+select * from item_pedido;
+select * from estoque;
